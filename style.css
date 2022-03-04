@@ -4,7 +4,8 @@
     --color-primary: hsl(193, 38%, 86%);
     --color-accent: hsl(150, 100%, 66%);
     --color-neutral: hsl(217, 19%, 38%);
-    --color-neutral-dark: hsl(217, 19%, 24%);
+    --color-neutral-grayish-dark: hsl(217, 19%, 24%);
+    --color-neutral-dark-blue: hsl(218, 23%, 16%);
 }
 
 * {
@@ -17,7 +18,7 @@ body {
     font-size: 1.75rem;
     font-family: 'Manrope', sans-serif;
     font-weight: 800;
-    background: var(--color-neutral-dark);
+    background: var(--color-neutral-dark-blue);
     color: var(--color-primary);
 }
 
@@ -39,7 +40,7 @@ main {
 }
 
 .light-background {
-    background: var(--color-neutral);
+    background: var(--color-neutral-grayish-dark);
 }
 
 .accent {
