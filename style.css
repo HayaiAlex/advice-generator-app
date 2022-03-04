@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+    --color-primary: hsl(193, 38%, 86%);
+    --color-accent: hsl(150, 100%, 66%);
+    --color-neutral: hsl(217, 19%, 38%);
+    --color-neutral-dark: hsl(217, 19%, 24%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.75rem;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    background: var(--color-neutral-dark);
+    color: var(--color-primary);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    
+    /* when vw small, set to 95vw */
+    /* when vw big, set to 60vw */
+    /* width: 60vw; */
+    width: min(90vw,40rem);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+}
+
+.light-background {
+    background: var(--color-neutral);
+}
+
+.accent {
+    color: var(--color-accent)
+}
+
+.small-text {
+    font-size: 0.9rem;
+    letter-spacing: 0.25rem;
+}
+
+.accent-circle {
+    background: var(--color-accent);
+    border: 1.75rem solid var(--color-accent);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+
+    /* center content (button) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accent-circle:hover {
+    box-shadow: 0 0 2rem 0 var(--color-accent);
+}
+
+.page-divider-desktop,
+.page-divider-mobile {
+    margin: 1rem 0 2.5rem 0;
+}
+
+.page-divider-mobile {
+    display: none;
+}
+
+@media screen and (max-width:500px) {
+    .page-divider-mobile {
+        display: block;
+    }
+    .page-divider-desktop {
+        display: none;
+    }
+}
+
+.button-container {
+    margin-bottom: -4.7rem;
+}
+
+.quote {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.attribution {
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
